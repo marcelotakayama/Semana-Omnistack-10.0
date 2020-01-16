@@ -24,6 +24,8 @@ routes.post('/devs', async (req, res) => {
         techs: techsArray,
     })
 
+    //teste
+
 
 
     console.log(name, avatar_url, bio, github_username);
