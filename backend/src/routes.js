@@ -24,6 +24,7 @@ routes.post('/devs', async (req, res) => {
         techs: techsArray,
     })
 
+    ////////////////teste de commit na master
     //teste
 
 //outro teste
