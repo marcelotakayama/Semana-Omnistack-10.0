@@ -10,6 +10,8 @@ mongoose.connect('mongodb+srv://omnistack:omnistack@cluster0-ckcwb.mongodb.net/w
     useUnifiedTopology: true,
 });
 
+
+// A partir daqui nao ta funcionando, deve ser a configuração do cors
 app.use(cors());
 app.use(express.json());
 app.use(routes);
