@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import './App.css';
+import api from './services/api';
 
+import './App.css';
 import './global.css';
 import './App.css';
 import './Sidebar.css';
@@ -34,7 +35,13 @@ function App() {
   async function handleAddDev(e) {
     e.preventDefault();
 
-    
+    const response = await api.post('/devs', {
+      github_username,
+      techs,
+      latitude,
+      longitude,
+    })
+    console.log(response.data)
   }
 
   return (
